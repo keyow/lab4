@@ -12,7 +12,6 @@ std::pair<float, float> minMax(const std::vector<float>& arr) {
 
         return std::pair<float, float>(min, max);
     }
-    else {
+    else
         return std::pair<float, float>(std::numeric_limits<float>::min(), std::numeric_limits<float>::max());
-    }
 }
