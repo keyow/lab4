@@ -5,28 +5,27 @@
 #include <iostream>
 #include <iomanip>
 
-void array_generator_float(std::vector<float>& arr, std::vector<float>& arr_copy, int n) {
+void array_generator_float(std::vector<float>& arr, int n) {
     if (n < 0) {
         std::cerr << "Array length can't be negative! Exiting..." << std::endl;
+        system("pause");
         exit(-1);
     }
 
-    int rand_val = 0;
+    float rand_val = 0;
     std::srand(std::time(nullptr));
 
     for (int i = 0; i < n; i++) {
         rand_val = std::rand();
-        if (rand() % 2 == 0) {
-            rand_val = rand_val / 10;
-        }
+        rand_val = rand_val / ((std::rand() / 1000) + 1);
         arr.push_back(rand_val);
-        arr_copy.push_back(rand_val);
     }
 }
 
 void array_generator_int(std::vector<int>& arr, int n) {
     if (n < 0) {
         std::cerr << "Array length can't be negative! Exiting..." << std::endl;
+        system("pause");
         exit(-1);
     }
 

@@ -24,5 +24,7 @@ std::string replace(const std::string& str, const std::string& old, const std::s
         }
     }
 
+    if (!buffer.empty()) result += buffer;
+
     return result;
 }

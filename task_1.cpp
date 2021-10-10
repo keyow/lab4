@@ -1,4 +1,5 @@
 #include <vector>
+#include <iostream>
 
 float mean(const std::vector<float>& arr) {
     if (!arr.empty()) {

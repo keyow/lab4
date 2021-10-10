@@ -1,6 +1,6 @@
 #pragma once
 
-void array_generator_float(std::vector<float>&, std::vector<float>&, int);
+void array_generator_float(std::vector<float>&, int);
 void array_generator_int(std::vector<int>&, int);
 
 void print_f(std::vector<float>&);
